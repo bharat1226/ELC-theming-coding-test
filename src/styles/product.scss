@@ -1,0 +1,264 @@
+@import 'fonts.scss';
+
+/** Add styles here **/
+
+// Mobile first CSS
+
+.container {
+  width: 340px;
+  margin: auto;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.product-figure {
+  &__image {
+    width: 340px;
+    height: 424px;
+    position: relative;
+    top: 144px;
+    left: -40px;
+  }
+}
+
+.product-category {
+  position: absolute;
+  top: 93px;
+  margin: 0px;
+  font-family: $elc-font-light;
+  letter-spacing: 0.03em;
+  color: #999999;
+}
+
+.product-name {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.product-description {
+  width: 300px;
+  letter-spacing: 0.02em;
+}
+
+.product-details {
+  margin-top: 188px;
+
+  hr {
+    margin-top: 20px;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &__stars {
+    width: 115px;
+    height: 15px;
+  }
+
+  &__view-all {
+    width: 25px;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.product-benifits,
+.product-finish,
+.product-coverage,
+.product-key-ingredients {
+  &__title,
+  &__description {
+    margin: 0px;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #999999;
+  }
+}
+
+.detailed-description-style {
+  margin: 20px 0px 20px 0px;
+}
+
+.product-shade {
+  box-sizing: border-box;
+  border: 2px solid #e6e6e6;
+  padding: 21px 20px 15px 20px;
+
+  &__shade-name {
+    font-weight: bold;
+  }
+
+  &__shade-color {
+    float: right;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.product-quantity {
+  display: inline-block;
+  font-weight: bold;
+
+  &__title,
+  &__amount {
+    margin-right: 10px;
+  }
+
+  &__decrease {
+    position: relative;
+    margin-right: 10px;
+    width: 20px;
+    top: 5px;
+  }
+
+  &__increase {
+    width: 20px;
+    position: relative;
+    top: 5px;
+  }
+}
+
+.product-quantity-purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.product-otp {
+  font-weight: bold;
+
+  &__title {
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+
+  &__frequency {
+    width: 25px;
+    float: right;
+    position: relative;
+    top: -4px;
+  }
+}
+
+.product-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 33px 0px 0px 0px;
+}
+
+.product-add-to-bag {
+  margin: 30px 0px 20px 0px;
+  height: 56px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1304px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .product-figure {
+    &__image {
+      width: 576px;
+      height: 720px;
+      position: relative;
+      top: 184px;
+    }
+  }
+
+  .product-details {
+    width: 576px;
+    margin-top: 98px;
+
+    hr {
+      margin-top: 25px;
+      margin-bottom: 23px;
+    }
+  }
+
+  .product-category {
+    position: static;
+  }
+
+  .product-name {
+    margin: 11px 0px 8px 0px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .product-description {
+    letter-spacing: 0.02em;
+    width: 520px;
+    margin-bottom: 2px;
+  }
+
+  .product-rating {
+    &__stars {
+      width: 115px;
+      height: 16px;
+    }
+  }
+
+  .product-benifits,
+  .product-finish,
+  .product-coverage,
+  .product-key-ingredients {
+    min-width: 290px;
+  }
+
+  .product-benifits-finish,
+  .product-coverage-ingredients {
+    display: flex;
+  }
+
+  .product-shade {
+    width: 276px;
+    height: 64px;
+  }
+
+  .product-quantity-purchase {
+    justify-content: normal;
+  }
+
+  .product-quantity,
+  .product-otp {
+    width: 290px;
+
+    &__frequency {
+      float: none;
+      top: 7px;
+    }
+  }
+
+  .product-price {
+    width: 290px;
+    margin: 0px;
+  }
+
+  .product-add-to-bag {
+    width: 276px;
+    margin: 0px;
+  }
+
+  .product-price-bag {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
